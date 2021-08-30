@@ -81,7 +81,10 @@ export default function Note(props:any){
                     return (
                         <div className="note-container" key={index}>
                             <div className="note-title">
-                                <div>{note.title}</div>
+                                <div>
+                                    <span>{index}.</span>
+                                    <span>{note.title}</span>
+                                </div>
                                 <Button 
                                     type="primary" 
                                     shape="circle" 
